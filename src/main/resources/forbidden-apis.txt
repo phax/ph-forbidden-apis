@@ -1,3 +1,4 @@
+@defaultMessage Use valueOf() instead
 java.lang.Boolean#<init>(boolean)
 java.lang.Byte#<init>(byte)
 java.lang.Double#<init>(double)
