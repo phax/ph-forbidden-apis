@@ -20,6 +20,7 @@ java.io.PushbackInputStream
 java.io.PushbackReader
 java.io.StringReader
 java.io.StringWriter
+java.util.Properties
 
 @defaultMessage Use StringHelper methods instead
 java.lang.String#replace(char,char)
