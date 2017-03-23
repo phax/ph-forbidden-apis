@@ -25,6 +25,10 @@ java.util.Properties
 @defaultMessage Use StringHelper methods instead
 java.lang.String#replace(char,char)
 java.lang.String#replace(java.lang.CharSequence,java.lang.CharSequence)
+java.lang.String#replaceAll(String,String)
+java.lang.String#replaceFirst(String,String)
+java.lang.String#split(String)
+java.lang.String#split(String,int)
 
 @defaultMessage You are using the wrong class
 org.omg.CORBA_2_3.portable.InputStream
