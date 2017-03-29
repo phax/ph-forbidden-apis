@@ -2,6 +2,11 @@
 [Forbidden APIs](https://github.com/policeman-tools/forbidden-apis) signature for my projects.
 They are mostly about style and performance and not so much about correctness.
 
+# News and Noteworthy
+  
+  * v1.0.0 - 2017-03-29
+    * Initial version containing `forbidden-apis.txt`
+
 ## Usage in Maven
 
 Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
@@ -15,21 +20,18 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
         <artifactId>forbiddenapis</artifactId>
         <version>2.3</version>
         <configuration>
-          <!-- if the used Java version is too new,
-              don't fail, just do nothing:  -->
           <failOnUnsupportedJava>false</failOnUnsupportedJava>
           <bundledSignatures>
-            <!-- Choose the right signatures based on 'maven.compiler.target': -->
+            <!-- Choose the right signatures based on 'maven.compiler.target' property: -->
             <bundledSignature>jdk-unsafe</bundledSignature>
             <bundledSignature>jdk-deprecated</bundledSignature>
-            <!-- start 2.1 -->
             <bundledSignature>jdk-internal</bundledSignature>
             <bundledSignature>jdk-non-portable</bundledSignature>
-            <!-- end 2.1 -->
             <bundledSignature>jdk-system-out</bundledSignature>
             <bundledSignature>jdk-reflection</bundledSignature>
           </bundledSignatures>
           <signaturesArtifacts>
+            <!-- Finally add this artifact --> 
             <signaturesArtifact>
               <groupId>com.helger</groupId>
               <artifactId>ph-forbidden-apis</artifactId>
@@ -39,12 +41,14 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
             </signaturesArtifact>
           </signaturesArtifacts>
           <excludes>
+             <!-- Example on how to exclude classes */
             <exclude>**/TestClassToExclude.class</exclude>
           </excludes>
         </configuration>
         <executions>
           <execution>
             <goals>
+              <!-- Execute for main and test -->
               <goal>check</goal>
               <goal>testCheck</goal>
             </goals>
