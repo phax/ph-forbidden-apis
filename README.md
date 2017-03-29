@@ -41,7 +41,7 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
             </signaturesArtifact>
           </signaturesArtifacts>
           <excludes>
-             <!-- Example on how to exclude classes */
+             <!-- Example on how to exclude classes -->
             <exclude>**/TestClassToExclude.class</exclude>
           </excludes>
         </configuration>
