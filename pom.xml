@@ -25,7 +25,7 @@
     <version>1.9.2</version>
   </parent>
   <artifactId>ph-forbidden-apis</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
   <name>ph-forbidden-apis</name>
   <description>Forbidden APIs rules</description>
@@ -44,7 +44,7 @@
     <connection>scm:git:git@github.com:phax/ph-forbidden-apis.git</connection>
     <developerConnection>scm:git:git@github.com:phax/ph-forbidden-apis.git</developerConnection>
     <url>http://github.com/phax/ph-forbidden-apis</url>
-    <tag>HEAD</tag>
+    <tag>ph-forbidden-apis-1.0.0</tag>
   </scm>
   
   <organization>
