@@ -63,5 +63,5 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
 
 ---
 
-My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodeingStyleguide.md) |
+My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |
 On Twitter: <a href="https://twitter.com/philiphelger">@philiphelger</a>
