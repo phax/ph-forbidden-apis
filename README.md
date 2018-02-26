@@ -3,9 +3,11 @@
 They are mostly about style and performance and not so much about correctness.
 
 # News and Noteworthy
-  
-  * v1.0.0 - 2017-03-29
-    * Initial version containing `forbidden-apis.txt`
+
+* v1.1.0 - work in progress
+  * Changed filenames to `forbidden-apis-java8.txt` and `forbidden-apis-java9.txt`  
+* v1.0.0 - 2017-03-29
+  * Initial version containing `forbidden-apis.txt`
 
 ## Usage in Maven
 
@@ -18,7 +20,7 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
       <plugin>
         <groupId>de.thetaphi</groupId>
         <artifactId>forbiddenapis</artifactId>
-        <version>2.3</version>
+        <version>2.4.1</version>
         <configuration>
           <failOnUnsupportedJava>false</failOnUnsupportedJava>
           <bundledSignatures>
@@ -35,9 +37,9 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
             <signaturesArtifact>
               <groupId>com.helger</groupId>
               <artifactId>ph-forbidden-apis</artifactId>
-              <version>1.0.0</version>
+              <version>1.1.0-SNAPSHOT</version>
               <type>jar</type>
-              <path>forbidden-apis.txt</path>
+              <path>forbidden-apis-java8.txt</path>
             </signaturesArtifact>
           </signaturesArtifacts>
           <excludes>

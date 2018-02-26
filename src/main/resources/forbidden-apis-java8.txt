@@ -36,6 +36,7 @@ java.io.DataInputStream#readUTF()
 java.io.DataOutput#writeUTF(java.lang.String)
 java.io.DataOutputStream#writeUTF(java.lang.String)
 
+# Not available in Java9
 @defaultMessage You are using the wrong class
 org.omg.CORBA_2_3.portable.InputStream
 org.omg.CORBA_2_3.portable.OutputStream
