@@ -42,3 +42,6 @@ org.omg.CORBA_2_3.portable.InputStream
 org.omg.CORBA_2_3.portable.OutputStream
 org.omg.CORBA.portable.InputStream
 org.omg.CORBA.portable.OutputStream
+
+@deaultMessae Deprecated in Java 9
+java.lang.Class#newInstance()
