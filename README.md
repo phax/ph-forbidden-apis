@@ -4,6 +4,8 @@ They are mostly about style and performance and not so much about correctness.
 
 # News and Noteworthy
 
+* v1.1.1 - 2018-03-28
+  * Fixed a typo in Java9 file, and added a test for reading
 * v1.1.0 - 2018-03-28
   * Changed filenames to `forbidden-apis-java8.txt` and `forbidden-apis-java9.txt`  
 * v1.0.0 - 2017-03-29
@@ -38,7 +40,7 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
             <signaturesArtifact>
               <groupId>com.helger</groupId>
               <artifactId>ph-forbidden-apis</artifactId>
-              <version>1.1.0</version>
+              <version>1.1.1</version>
               <type>jar</type>
               <path>forbidden-apis-java8.txt</path>
             </signaturesArtifact>
