@@ -4,7 +4,7 @@ They are mostly about style and performance and not so much about correctness.
 
 # News and Noteworthy
 
-* v1.1.0 - work in progress
+* v1.1.0 - 2018-03-28
   * Changed filenames to `forbidden-apis-java8.txt` and `forbidden-apis-java9.txt`  
 * v1.0.0 - 2017-03-29
   * Initial version containing `forbidden-apis.txt`
@@ -12,6 +12,7 @@ They are mostly about style and performance and not so much about correctness.
 ## Usage in Maven
 
 Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
+
 ```xml
   <build>
 ...
@@ -37,7 +38,7 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
             <signaturesArtifact>
               <groupId>com.helger</groupId>
               <artifactId>ph-forbidden-apis</artifactId>
-              <version>1.1.0-SNAPSHOT</version>
+              <version>1.1.0</version>
               <type>jar</type>
               <path>forbidden-apis-java8.txt</path>
             </signaturesArtifact>
