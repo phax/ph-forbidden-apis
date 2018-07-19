@@ -34,7 +34,7 @@ import de.thetaphi.forbiddenapis.ParseException;
 
 public final class ReadAllFuncTest
 {
-  private static final org.slf4j.Logger s_aLogger = LoggerFactory.getLogger (ReadAllFuncTest.class);
+  private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger (ReadAllFuncTest.class);
 
   @Test
   public void testReadAll () throws IOException, ParseException
@@ -44,19 +44,19 @@ public final class ReadAllFuncTest
       @Override
       public void error (final String msg)
       {
-        s_aLogger.error (msg);
+        LOGGER.error (msg);
       }
 
       @Override
       public void warn (final String msg)
       {
-        s_aLogger.warn (msg);
+        LOGGER.warn (msg);
       }
 
       @Override
       public void info (final String msg)
       {
-        s_aLogger.info (msg);
+        LOGGER.info (msg);
       }
     };
 
