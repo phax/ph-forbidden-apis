@@ -10,9 +10,6 @@ LK3QB5juy9W7NxlXikpL10BVa4DwsEn7bO4zajMvdwgiHX8Truf2WPz0WY7tmr/WFxTWQc67KP6QmeAm
 LCqX2GzST8fwqevW8l11hdw7xFDOoe8D+1znbclV4nkpepsGdxJZCVsJp0rxxyRhtnv9SdkI8XLcFWZGLK4kiHD+dUzWucUDW0iS8uOL236c9bpcDkL0UMxA
 V63Is10AlAkVXKxiiOanyf7T3xMJ+kTIDE8hJ5Fbpl8vHVEovyjflvcoUcuYXnMmp/V8nrfzpVnYm6NnP6CcPDVATHgoF4="
 
-jdk:
-  - oraclejdk8
-  
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V -U -P jdeps
 
@@ -21,7 +18,15 @@ script:
 
 cache:
   directories:
-  - $HOME/.m2
+    - $HOME/.m2
 
-after_success:
-  - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy
+jobs:
+  include:
+    - stage: test
+      jdk: oraclejdk8
+      after_success:
+        - mvn deploy --settings travis-settings.xml -DskipTests=true -B -P travis-deploy
+    - stage: test
+      jdk: oraclejdk11
+    - stage: test
+      jdk: openjdk11
