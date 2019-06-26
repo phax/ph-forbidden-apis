@@ -34,6 +34,4 @@ jobs:
     - stage: test
       jdk: openjdk11
     - stage: test
-      jdk: oraclejdk11
-    - stage: test
       jdk: openjdk12
