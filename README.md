@@ -2,15 +2,6 @@
 [Forbidden APIs](https://github.com/policeman-tools/forbidden-apis) signature for my projects.
 They are mostly about style and performance and not so much about correctness.
 
-# News and Noteworthy
-
-* v1.1.1 - 2018-03-28
-  * Fixed a typo in Java9 file, and added a test for reading
-* v1.1.0 - 2018-03-28
-  * Changed filenames to `forbidden-apis-java8.txt` and `forbidden-apis-java9.txt`  
-* v1.0.0 - 2017-03-29
-  * Initial version containing `forbidden-apis.txt`
-
 ## Usage in Maven
 
 Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
@@ -65,6 +56,15 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
 ...
   </build>
 ```
+
+# News and Noteworthy
+
+* v1.1.1 - 2018-03-28
+  * Fixed a typo in Java9 file, and added a test for reading
+* v1.1.0 - 2018-03-28
+  * Changed filenames to `forbidden-apis-java8.txt` and `forbidden-apis-java9.txt`  
+* v1.0.0 - 2017-03-29
+  * Initial version containing `forbidden-apis.txt`
 
 ---
 
