@@ -14,7 +14,7 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
       <plugin>
         <groupId>de.thetaphi</groupId>
         <artifactId>forbiddenapis</artifactId>
-        <version>2.4.1</version>
+        <version>3.2</version>
         <configuration>
           <failOnUnsupportedJava>false</failOnUnsupportedJava>
           <bundledSignatures>
@@ -56,6 +56,13 @@ Put a call to the forbidden-apis plugin and add this as a signatureArtifact:
 ...
   </build>
 ```
+
+Run the check explicitly (one of them):
+```
+mvn forbiddenapis:check
+mvn forbiddenapis:testCheck
+```
+
 
 # News and Noteworthy
 
