@@ -58,6 +58,12 @@ public final class ReadAllFuncTest
       {
         LOGGER.info (msg);
       }
+
+      @Override
+      public void debug (final String msg)
+      {
+        LOGGER.debug (msg);
+      }
     };
 
     final EnumSet <Checker.Option> options = EnumSet.noneOf (Checker.Option.class);
