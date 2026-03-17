@@ -1,5 +1,10 @@
 # ph-forbidden-apis
 
+<!-- ph-badge-start -->
+[![Sonatype Central](https://maven-badges.sml.io/sonatype-central/com.helger/ph-forbidden-apis/badge.svg)](https://maven-badges.sml.io/sonatype-central/com.helger/ph-forbidden-apis/)
+[![javadoc](https://javadoc.io/badge2/com.helger/ph-forbidden-apis/javadoc.svg)](https://javadoc.io/doc/com.helger/ph-forbidden-apis)
+<!-- ph-badge-end -->
+
 [Forbidden APIs](https://github.com/policeman-tools/forbidden-apis) signature for my projects.
 They are mostly about style and performance and not so much about correctness.
 
