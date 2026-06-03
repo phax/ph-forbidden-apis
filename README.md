@@ -3,6 +3,8 @@
 <!-- ph-badge-start -->
 [![Sonatype Central](https://maven-badges.sml.io/sonatype-central/com.helger/ph-forbidden-apis/badge.svg)](https://maven-badges.sml.io/sonatype-central/com.helger/ph-forbidden-apis/)
 [![javadoc](https://javadoc.io/badge2/com.helger/ph-forbidden-apis/javadoc.svg)](https://javadoc.io/doc/com.helger/ph-forbidden-apis)
+
+> If this project saved you some time or made your day a little easier, a star would mean a lot — it helps others find it too.
 <!-- ph-badge-end -->
 
 [Forbidden APIs](https://github.com/policeman-tools/forbidden-apis) signature for my projects.
